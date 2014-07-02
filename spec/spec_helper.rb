@@ -5,6 +5,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rails'
 require 'capybara/rspec'
+require 'capybara-screenshot/rspec'
 
 OmniAuth.config.test_mode = true
 OmniAuth.config.add_mock(:saml, {:uid => 'person2@example.com'})
