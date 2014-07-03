@@ -36,9 +36,9 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
 
-  Capybara.javascript_driver = :webkit
+  Capybara.javascript_driver = :webkit_debug
   config.include Capybara::DSL
- 
+
   config.before(:suite) do
     DatabaseCleaner.clean_with :truncation
   end
