@@ -13,7 +13,6 @@ end
 
 def sign_in(user)
   visit root_path
-  sleep 10
   within "#okta-input" do
     fill_in "temp-okta", with: user.okta_name
     click_button "Set new OKTA user"
