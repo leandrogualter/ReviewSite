@@ -44,8 +44,8 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do
-    headless = Headless.new
-    headless.start
+    @headless = Headless.new
+    @headless.start
     if example.metadata[:js]
       DatabaseCleaner.strategy = :truncation
     else
@@ -57,6 +57,6 @@ RSpec.configure do |config|
 
   config.after(:each) do
     DatabaseCleaner.clean
-    headless.destroy
+    @headless.destroy
   end
 end
