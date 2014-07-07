@@ -43,7 +43,7 @@ end
 group :test do
   gem 'rack_session_access'
   gem 'shoulda-matchers', '1.3.0'
-  gem 'capybara'
+  gem 'capybara', '~> 2.4.0'
   gem 'capybara-webkit'
   gem 'capybara-screenshot'
   gem 'factory_girl_rails', '1.4.0'
