@@ -5,6 +5,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rails'
 require 'capybara/rspec'
+require 'capybara/poltergeist'
 require 'capybara-screenshot/rspec'
 
 OmniAuth.config.test_mode = true
@@ -36,7 +37,7 @@ RSpec.configure do |config|
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
 
-  Capybara.javascript_driver = :webkit
+  Capybara.javascript_driver = :poltergeist
   config.include Capybara::DSL
 
   config.before(:suite) do
