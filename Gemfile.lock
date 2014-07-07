@@ -133,7 +133,6 @@ GEM
       tilt
     hashie (2.1.1)
     hashr (0.0.22)
-    headless (1.0.2)
     highline (1.6.21)
     hike (1.2.3)
     htmlentities (4.3.1)
@@ -299,7 +298,6 @@ DEPENDENCIES
   growl (= 1.0.3)
   guard-rspec (= 0.5.5)
   guard-spork (= 0.3.2)
-  headless
   jquery-datatables-rails
   jquery-rails
   jquery-tokeninput-rails
